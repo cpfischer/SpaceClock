@@ -1,0 +1,11 @@
+C:\Users\Caleb Fischer\Documents\Programming\SpaceClock\obj\Debug\netcoreapp2.1\SpaceClock.csprojAssemblyReference.cache
+C:\Users\Caleb Fischer\Documents\Programming\SpaceClock\obj\Debug\netcoreapp2.1\SpaceClock.csproj.CoreCompileInputs.cache
+C:\Users\Caleb Fischer\Documents\Programming\SpaceClock\obj\Debug\netcoreapp2.1\SpaceClock.AssemblyInfoInputs.cache
+C:\Users\Caleb Fischer\Documents\Programming\SpaceClock\obj\Debug\netcoreapp2.1\SpaceClock.AssemblyInfo.cs
+C:\Users\Caleb Fischer\Documents\Programming\SpaceClock\bin\Debug\netcoreapp2.1\SpaceClock.deps.json
+C:\Users\Caleb Fischer\Documents\Programming\SpaceClock\bin\Debug\netcoreapp2.1\SpaceClock.runtimeconfig.json
+C:\Users\Caleb Fischer\Documents\Programming\SpaceClock\bin\Debug\netcoreapp2.1\SpaceClock.runtimeconfig.dev.json
+C:\Users\Caleb Fischer\Documents\Programming\SpaceClock\bin\Debug\netcoreapp2.1\SpaceClock.dll
+C:\Users\Caleb Fischer\Documents\Programming\SpaceClock\bin\Debug\netcoreapp2.1\SpaceClock.pdb
+C:\Users\Caleb Fischer\Documents\Programming\SpaceClock\obj\Debug\netcoreapp2.1\SpaceClock.dll
+C:\Users\Caleb Fischer\Documents\Programming\SpaceClock\obj\Debug\netcoreapp2.1\SpaceClock.pdb
