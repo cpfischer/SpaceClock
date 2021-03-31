@@ -7,6 +7,20 @@ namespace SpaceClock
         //src https://faculty.eng.ufl.edu/jonathan-scheffe/wp-content/uploads/sites/100/2020/08/Solar-Time1419.pdf
 
         //Gonna need a dayOfYear calculation and 366 for leap years
+        public static double GetHourAngle(TimeSpan solarTime)
+        {
+            double returnedAngle = 0.0;
+            if (solarTime.Hours > 12)
+            {
+                returnedAngle = 15.0 * ((solarTime.Hours - 12.0) + solarTime.Minutes / 60.0) + 180.0;
+                Console.WriteLine(15.0 * ((7 - 12.0) - 30 / 60.0) - 180.0);
+            }
+            else
+            {
+                returnedAngle = 15.0 * ((solarTime.Hours - 12.0) - solarTime.Minutes / 60.0) - 180.0;
+            }
+            return returnedAngle;
+        }
         public static double GetSolarPosition(double longitude, double latitude)
         {
             double dayOfYear =  Convert.ToDouble(DateTime.Now.DayOfYear);
@@ -26,8 +40,9 @@ namespace SpaceClock
             double standardMeridian = Math.Abs(Convert.ToDouble(TimeZoneInfo.Local.GetUtcOffset(DateTime.Now).TotalHours)) * 15;
             TimeSpan solarTime = currTime + TimeSpan.FromMinutes(4 * (standardMeridian - Math.Abs(longitude)) + equationOfTime);
           
-            double hourAngle = (solarTime.TotalMinutes / 4.0) - 180;
-
+            //double hourAngle = 15.0 * ((solarTime.Hours - 12.0) + solarTime.Minutes / 60.0);
+            double hourAngle = solarTime.TotalMinutes / 4 - 180;
+            Console.WriteLine(hourAngle);
             // double zenithAngle = Math.Sin(latitude) * Math.Sin(declination) + Math.Cos(latitude) 
             //                    * Math.Cos(declination) * Math.Cos(hourAngle); //Wrong
             
